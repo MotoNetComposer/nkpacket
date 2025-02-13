@@ -174,7 +174,8 @@ tls_syntax(Base) ->
         tls_cacertfile => string,
         tls_password => string,
         tls_depth => {integer, 0, 16},
-        tls_versions => {list, atom}
+        tls_versions => {list, atom},
+        tls_ciphers => {list, string}
     }.
 
 

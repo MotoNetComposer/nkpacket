@@ -79,6 +79,7 @@ make_opts(Opts, Defaults) ->
                 tls_password -> Acc#{password => Val};
                 tls_depth -> Acc#{depth => Val};
                 tls_versions -> Acc#{versions => Val};
+                tls_ciphers -> Acc#{ciphers => Val};
                 _ -> Acc
             end
         end,

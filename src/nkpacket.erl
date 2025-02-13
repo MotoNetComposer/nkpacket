@@ -188,7 +188,8 @@
         tls_cacertfile => string(),
         tls_password => string(),
         tls_depth => 0..16,
-        tls_versions => [atom()]
+        tls_versions => [atom()],
+        tls_ciphers => [string()]
     }.
 
 

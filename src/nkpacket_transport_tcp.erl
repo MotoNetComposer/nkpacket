@@ -156,7 +156,7 @@ init([NkPort]) ->
             nkpacket_util:register_listener(NkPort),
             ConnMetaOpts = [
                 tcp_packet, send_timeout, send_timeout_close,
-                tls_certfile, tls_keyfile, tls_cacertfile
+                tls_certfile, tls_keyfile, tls_cacertfile, tls_versions, tls_ciphers
                 | ?CONN_LISTEN_OPTS
             ],
             % ConnMetaOpts = [tcp_packet, tls_opts | ?CONN_LISTEN_OPTS],
